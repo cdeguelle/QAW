@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Page d'accueil</title>
+    <meta name="description" content="Page de connexion du blog">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="header-title">
+            <a href="index.html" aria-label="Retour à la page d'acceuil">
+                <img src="https://cdn.logojoy.com/wp-content/uploads/2018/05/30164225/572.png" width=80 height=50 alt="Logo du blog">
+            </a>
+            <h1>Mon Blog</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="login.html" aria-label="Se connecter">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <form class="login-form" action="index.html">
+            <img src="https://cdn.logojoy.com/wp-content/uploads/2018/05/30164225/572.png" width=180 height=150 alt="Logo du blog">
+            <h2>Connexion</h2>
+            <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required aria-required="true">
+            </div>
+            <div class="form-group">
+                <label for="password">Mot de passe (8 charactères minimum) :</label>
+                <input type="password" id="password" name="password" required aria-required="true" minlength="8">
+                <div>
+                    <label for="show-password">Afficher le mot de passe</label>
+                    <input type="checkbox" id="show-password" onclick="showPassword()">
+                </div>
+            </div>
+            <button type="submit">Se connecter</button>
+        </form>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Mon Blog - Tous droits réservés</p>
+        <a href="#">Mentions légales</a>
+        <a href="#">Conditions générales d'utilisation</a>
+        <a href="#">Politique de confidentialité</a>
+        <a href="#">À propos</a>
+    </footer>
+
+    <script>
+        function showPassword() {
+            var passwordInput = document.getElementById('password');
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+            } else {
+                passwordInput.type = "password";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    min-width: 100vw;
+}
+
+header {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    > a {
+        color: white;
+    }
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    > a > img {
+        border-radius: 12px;
+    }
+}
+
+nav {
+    > ul {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        list-style: none;
+        > li {
+            > a {
+                color: white;
+            }
+        }
+    }
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    &:hover {
+        color: rgb(214, 32, 114);
+    }
+    > svg {
+        > g {
+            > path {
+                fill: white;
+            }
+        }
+    }
+    > svg:hover {
+        > g {
+            > path {
+                fill: rgb(214, 32, 114);
+            }
+        }
+    }
+}
+
+article {
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+
+.article-content {
+    padding: 20px;
+}
+
+.article-detail {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    text-align: center;
+    padding: 20px;
+}
+
+tfoot {
+    > tr {
+        > td {
+            padding: 50px;
+        }
+    }
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 20%;
+}
+
+.comments {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    padding: 20px;
+    > li {
+        list-style: none;
+        padding: 20px;
+        border: 1px solid #ccc;
+        width: 50%;
+    }
+}
+
+button[type="submit"] {
+    padding: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 20%;
+    &:hover {
+        background-color: rgb(105, 211, 125);
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+    color: white;
+    > a {
+        color: white;
+    }
+}
