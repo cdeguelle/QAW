@@ -15,12 +15,12 @@
             <a href="index.html" aria-label="Retour à la page d'acceuil">
                 <img src="https://cdn.logojoy.com/wp-content/uploads/2018/05/30164225/572.png" width=80 height=50 alt="Logo du blog">
             </a>
-            <h1>Login</h1>
+            <p>Connexion</p>
         </div>
-        <nav>
+        <nav aria-label="Navigation principale">
             <ul>
                 <li>
-                    <a href="login.html" aria-label="Se connecter">Login</a>
+                    <a href="login.html" aria-label="Se connecter">Connexion</a>
                 </li>
             </ul>
         </nav>
@@ -29,17 +29,17 @@
     <main>
         <form class="login-form" action="index.html">
             <img src="https://cdn.logojoy.com/wp-content/uploads/2018/05/30164225/572.png" width=180 height=150 alt="Logo du blog">
-            <h2>Connexion</h2>
+            <h1>Connexion</h1>
             <div class="form-group">
                 <label for="email">Email :</label>
-                <input type="email" id="email" name="email" required aria-required="true" autofocus autocomplete="username">
+                <input type="email" id="email" name="email" required autofocus autocomplete="username">
             </div>
             <div class="form-group">
                 <label for="password">Mot de passe (8 charactères minimum) :</label>
-                <input type="password" id="password" name="password" required aria-required="true" minlength="8" autocomplete="current-password">
+                <input type="password" id="password" name="password" required minlength="8" autocomplete="current-password">
                 <div>
                     <label for="show-password">Afficher le mot de passe</label>
-                    <input type="checkbox" id="show-password" onclick="showPassword()">
+                    <input type="checkbox" id="show-password" name="cxoou" onclick="showPassword()">
                 </div>
             </div>
             <button type="submit" onclick="successLogin()">Se connecter</button>
