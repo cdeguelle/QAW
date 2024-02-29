@@ -92,6 +92,10 @@ article {
     padding: 20px;
 }
 
+.arborescence {
+    padding-left: 20px;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -154,6 +158,22 @@ button[type="submit"] {
     }
 }
 
+input[type=email]:invalid {
+    border: 2px solid red;
+}
+
+input[type=email]:valid {
+    border: 2px solid green;
+}
+
+input[type=password]:invalid {
+    border: 2px solid red;
+}
+
+input[type=password]:valid {
+    border: 2px solid green;
+}
+
 footer {
     display: flex;
     justify-content: space-around;
@@ -164,4 +184,8 @@ footer {
     > a {
         color: white;
     }
+}
+
+.result {
+    padding: 20px;
 }

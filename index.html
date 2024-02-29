@@ -6,6 +6,8 @@
     <title>Blog - Page d'accueil</title>
     <meta name="description" content="Page d'accueil du blog">
     <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="/fav.svg"/>
+    <link rel="apple-touch-icon" href="/fav.svg"/>
 </head>
 <body>
     <header>
@@ -13,8 +15,13 @@
             <a href="#" aria-label="Acceuil">
                 <img src="https://cdn.logojoy.com/wp-content/uploads/2018/05/30164225/572.png" width=80 height=50 alt="Logo du blog">
             </a>
-            <h1>Mon Blog</h1>
+            <h1>Acceuil</h1>
         </div>
+        <form action="research-result.html">
+            <label for="search"></label>
+            <input type="search" id="search" name="search" placeholder="Rechercher un article" aria-label="Rechercher un article">
+            <button type="submit">Rechercher</button>
+        </form>
         <nav>
             <ul>
                 <li>
@@ -31,7 +38,7 @@
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem aliquid natus obcaecati reprehenderit hic, temporibus accusantium repellendus ad vel nesciunt perferendis suscipit cum architecto quis, quo minus a quam impedit!</p>
                 <a href="article.html" aria-label="Lire l'article 1">Lire l'article</a>
                 <a href="article.html#comments" aria-label="Voir les commentaires de l'article 1">Voir les commentaires</a>
-                <p>Publié le 22 février 2024</p>
+                <p>Publié le <time datetime="2024-02-22">22 février 2024</time></p>
             </div>
             <img src="https://publication.octo.com/hubfs/picto%20produit.png" width=100 height=80 alt="Image de l'article 1">
         </article>
@@ -42,7 +49,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis quasi ratione harum deserunt quisquam culpa consequatur architecto autem, nobis magnam enim ea iste eos asperiores minima praesentium. Earum, harum repellendus?</p>
                 <a href="article.html" aria-label="Lire l'article 2">Lire l'article</a>
                 <a href="article.html#comments" aria-label="Voir les commentaires de l'article 2">Voir les commentaires</a>
-                <p>Publié le 22 février 2024</p>
+                <p>Publié le <time datetime="2024-02-22">22 février 2024</time></p>
             </div>
             <img src="https://publication.octo.com/hubfs/picto%20produit.png" width=100 height=80 alt="Image de l'article 2">
         </article>
@@ -53,7 +60,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit ratione quae architecto, illum quas assumenda sunt laborum a, quis, adipisci ea asperiores totam rem ex natus dolor dolorem voluptatibus excepturi!</p>
                 <a href="article.html" aria-label="Lire l'article 3">Lire l'article</a>
                 <a href="article.html#comments" aria-label="Voir les commentaires de l'article 3">Voir les commentaires</a>
-                <p>Publié le 22 février 2024</p>
+                <p>Publié le <time datetime="2024-02-22">22 février 2024</time></p>
             </div>
             <img src="https://publication.octo.com/hubfs/picto%20produit.png" width=100 height=80 alt="Image de l'article 3">
         </article>
@@ -64,7 +71,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum perspiciatis reprehenderit, ut et expedita nesciunt quasi totam quod, earum inventore error doloremque fugit rem nihil suscipit enim assumenda quisquam laborum?</p>
                 <a href="article.html" aria-label="Lire l'article 4">Lire l'article</a>
                 <a href="article.html#comments" aria-label="Voir les commentaires de l'article 4">Voir les commentaires</a>
-                <p>Publié le 22 février 2024</p>
+                <p>Publié le <time datetime="2024-02-22">22 février 2024</time></p>
             </div>
             <img src="https://publication.octo.com/hubfs/picto%20produit.png" width=100 height=80 alt="Image de l'article 4">
         </article>
@@ -75,7 +82,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis perferendis sunt rem quod, eum ipsam. Veniam provident architecto, aliquam nemo ratione necessitatibus aut dignissimos, officiis minima, repellendus dolores quae corporis.</p>
                 <a href="article.html" aria-label="Lire l'article 5">Lire l'article</a>
                 <a href="article.html#comments" aria-label="Voir les commentaires de l'article 5">Voir les commentaires</a>
-                <p>Publié le 22 février 2024</p>
+                <p>Publié le <time datetime="2024-02-22">22 février 2024</time></p>
             </div>
             <img src="https://publication.octo.com/hubfs/picto%20produit.png" width=100 height=80 alt="Image de l'article 5">
         </article>
@@ -83,10 +90,12 @@
     
     <footer>
         <p>&copy; 2024 Mon Blog - Tous droits réservés</p>
-        <a href="#">Mentions légales</a>
-        <a href="#">Conditions générales d'utilisation</a>
-        <a href="#">Politique de confidentialité</a>
-        <a href="#">À propos</a>
+        <a href="mentions_legales.html">Mentions légales</a>
+        <a href="cgu.html">Conditions générales d'utilisation</a>
+        <a href="confidentiality_policy.html">Politique de confidentialité</a>
+        <a href="about.html">À propos</a>
+        <a href="mailto:test@test.com">Contact</a>
+        <a href="plan_site.html">Plan du site</a>
     </footer>
 </body>
 </html>
