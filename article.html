@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - Article</title>
     <meta name="description" content="Description de l'article">
     <link rel="stylesheet" href="./style.css">
-    <link rel="shortcut icon" href="/fav.svg"/>
-    <link rel="apple-touch-icon" href="/fav.svg"/>
+    <link rel="shortcut icon" href="/fav.svg" />
+    <link rel="apple-touch-icon" href="/fav.svg" />
 </head>
+
 <body>
     <header>
         <div class="header-title">
             <a href="index.html" aria-label="Retour à la page d'acceuil">
-                <img src="https://cdn.logojoy.com/wp-content/uploads/2018/05/30164225/572.png" width=80 height=50 alt="Logo du blog">
+                <img src="https://cdn.logojoy.com/wp-content/uploads/2018/05/30164225/572.png" width=80 height=50
+                    alt="Logo du blog">
             </a>
             <p>Article</p>
         </div>
         <form action="research-result.html">
             <label for="search"></label>
-            <input type="search" id="search" name="search" placeholder="Rechercher un article" aria-label="Rechercher un article">
+            <input type="search" id="search" name="search" placeholder="Rechercher un article"
+                aria-label="Rechercher un article">
             <button type="submit">Rechercher</button>
         </form>
         <nav aria-label="Navigation principale">
@@ -30,13 +34,20 @@
             </ul>
         </nav>
     </header>
-    
+
     <main>
-        <p class="arborescence"><a href="index.html">Acceuil</a> / <a href="article.html">Article</a></p>
+        <p class="arborescence" aria-label="Chemin de navigation"><a href="index.html">Acceuil</a> / <a
+                href="article.html">Article</a></p>
         <article class="article-detail">
             <h1>Titre de l'article</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis aliquam provident adipisci quos natus nobis at modi ipsam, doloremque sunt? Sunt unde sequi culpa nam ab, quibusdam perferendis reprehenderit deleniti? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt assumenda consequatur repudiandae inventore ab dolores cupiditate soluta asperiores quidem distinctio. Reprehenderit libero unde quaerat culpa ab quia aliquid quo nulla? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam minus numquam consequatur animi iste iure debitis repellendus, ut perspiciatis voluptates! Earum dolorem quaerat maiores voluptatibus. Magnam maxime nihil facere! Molestiae?</p>
-            <p>Publié le <time datetime="2024-02-22">22 février 2024</time></p>  
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis aliquam provident adipisci quos natus
+                nobis at modi ipsam, doloremque sunt? Sunt unde sequi culpa nam ab, quibusdam perferendis reprehenderit
+                deleniti? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt assumenda consequatur
+                repudiandae inventore ab dolores cupiditate soluta asperiores quidem distinctio. Reprehenderit libero
+                unde quaerat culpa ab quia aliquid quo nulla? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veniam minus numquam consequatur animi iste iure debitis repellendus, ut perspiciatis voluptates! Earum
+                dolorem quaerat maiores voluptatibus. Magnam maxime nihil facere! Molestiae?</p>
+            <p>Publié le <time datetime="2024-02-22">22 février 2024</time></p>
 
             <h2>Tableau</h2>
             <table>
@@ -51,7 +62,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Ligne 1, Colonne 1</td>
+                        <th scope="row">Ligne 1, Colonne 1</th>
                         <td>Ligne 1, Colonne 2</td>
                         <td>Ligne 1, Colonne 3</td>
                         <td>Ligne 1, Colonne 4</td>
@@ -142,12 +153,12 @@
                     <p>Description du commentaire 5</p>
                 </li>
             </ul>
-        </aside>  
+        </aside>
     </main>
-    
+
     <footer>
         <p>&copy; 2024 Mon Blog - Tous droits réservés</p>
-        <nav aria-label="Liens utiles">
+        <nav aria-label="Navigation de pied de page">
             <ul>
                 <li><a href="mentions_legales.html">Mentions légales</a></li>
                 <li><a href="cgu.html">Conditions générales d'utilisation</a></li>
@@ -159,4 +170,5 @@
         </nav>
     </footer>
 </body>
+
 </html>
